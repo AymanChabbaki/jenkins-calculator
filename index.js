@@ -6,6 +6,8 @@ app.get('/add/:a/:b', (req, res) => {
     res.status(200).json({ result: result });
 });
 
+
+
 app.get('/divide/:a/:b', (req, res) => {
     const b = parseInt(req.params.b);
     if (b === 0) {
